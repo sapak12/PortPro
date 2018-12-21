@@ -1,0 +1,60 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
++reset()
+
+*::-webkit-input-placeholder
+	color: #999
+	opacity: 1
+
+*:-moz-placeholder
+	color: #999
+	opacity: 1
+
+*::-moz-placeholder
+	color: #999
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #999
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+html
+	font-size: 16px
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.43
+	font-family: $default-font
+	font-weight: normal
+	font-style: normal
+	overflow-x: hidden
+	opacity: 1
+	color: $text-main-color
+	background-color: #fff
+img
+	border: none
+	max-width: 100%
+
+a
+  color: #008178
+  outline: none
+  text-decoration: none
+  &:hover
+    text-decoration: none
+
+input
+  font: 1rem $default-font, sans-serif
+  outline: none
+
+
+
+@import "media" // Всегда в конце
